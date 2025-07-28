@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  color: #1c1c1e;
+  background-color: #f4f4f6;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Layout */
+.header {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.8rem 2.8rem;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+  box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.3);
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 1.2rem;
+  transform: translateY(-50%);
+}
+
+.chatgpt-link {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.chatgpt-icon {
+  width: 1.4rem;
+}
+
+/* Tabs */
+.tabs {
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tab {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tab:hover {
+  background: #f0f0f0;
+}
+
+/* Ads */
+.ads {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.ads h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.ads-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.ad {
+  background: #e5e5ea;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  color: #777;
+}
