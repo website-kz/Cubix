@@ -22,3 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
     container.appendChild(ad);
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  const input = document.querySelector("#search");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const query = input.value.trim();
+
+    if (!query) return;
+
+    // Проверка: если начинается с `wiki:`, ищем в Wikipedia
+    if (query.toLowerCase().startsWith("wiki:")) {
+      const searchTerm = query.substring(5).trim();
+      window.open(`https://en.wikipedia.org/wiki/${encodeURIComponent(searchTerm)}`, "_blank");
+    } else {
+      // Иначе — Google поиск
+      window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, "_blank");
+    }
+  });
+});
