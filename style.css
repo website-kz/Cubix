@@ -61,7 +61,27 @@ body {
 .chatgpt-icon {
   width: 1.4rem;
 }
+.chatgpt-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  z-index: 999;
+}
 
+.chatgpt-widget:hover {
+  transform: scale(1.05);
+}
+
+.chatgpt-widget img {
+  width: 32px;
+  height: 32px;
+}
 /* Tabs */
 .tabs {
   margin: 2rem auto;
