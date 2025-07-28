@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cubix Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="search-container">
+      <img src="icons/search.svg" alt="Search Icon" class="search-icon">
+      <input type="text" id="search-input" placeholder="Search with Google...">
+      <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer" class="chatgpt-link">
+        <img src="icons/chatgpt.svg" alt="ChatGPT" class="chatgpt-icon">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tabs">
+      <div class="tab">+ New Tab</div>
+      <div class="tab">Google</div>
+      <div class="tab">OpenAI</div>
+      <div class="tab">Apple</div>
+      <div class="tab">Meta</div>
+    </section>
+
+    <section class="ads" aria-label="Sponsored Ads">
+      <h2>Sponsored</h2>
+      <div id="ads-container" class="ads-container"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Cubicle Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
